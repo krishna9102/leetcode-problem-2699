@@ -7,7 +7,7 @@ class Solution {
         for (var edge : edges) {
             int firstNode = edge[0], secondNode = edge[1], edgWt = edge[2];
             if (edgWt == -1) continue;
-            nodeNeighMp.putIfAbsent(firstNode, new ArrayList<>());
+            nodeNeighMp.putIfAbsent(firstNode, new ArrayList<>());//
             nodeNeighMp.putIfAbsent(secondNode, new ArrayList<>());
             nodeNeighMp.get(firstNode).add(new Pair<>(secondNode, edgWt));
             nodeNeighMp.get(secondNode).add(new Pair<>(firstNode, edgWt));
